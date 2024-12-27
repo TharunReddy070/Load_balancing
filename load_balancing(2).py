@@ -120,10 +120,9 @@ def visualize_metrics(metrics):
         ax4.grid(True)
         
         plt.tight_layout()
-        plt.savefig('load_balancer_metrics.png')
-        plt.close()
+        plt.show()  # This will display the visualizations interactively
         
-        info("* Visualization saved as 'load_balancer_metrics.png'\n")
+        info("* Visualization displayed on screen\n")
         
     except Exception as e:
         info(f"Error creating visualizations: {str(e)}\n")
