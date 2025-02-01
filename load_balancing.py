@@ -21,7 +21,7 @@ class RoundRobinLoadBalancer:
             'utilizations': [],
             'requests_per_server': {ip: 0 for ip in server_ips},
             'timestamps': [],
-            'channel_capacity': 10  # Mbps
+            'channel_capacity': 1  # Mbps
         }
     
     def get_next_server(self):
